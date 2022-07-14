@@ -11,8 +11,8 @@ for (int ci = 0; ci < clubs.size(); ci++)
 club={1:['kadowaki','isida','okabe'],2:['yamanaka','hayakawa'],3:['tatibana','kimura']}
 user= ['yamanaka','kimura','hayakawa','isida','tatibana','kadowaki','okabe']
 
-for ui in user:
-    for ci,cv in club.items():
-        for mi in cv:
-            if ui == mi:
-                print(ui + 'はクラブ' + str(ci))
+for user_name in user:
+    for cn,cm in club.items():
+        for member_name in cm:
+            if user_name == member_name:
+                print(user_name + 'はクラブ' + str(cn))
